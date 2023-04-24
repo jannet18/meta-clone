@@ -27,25 +27,48 @@
                 <input type="text" placeholder="Search">
             </div>
         </div>
-        <div class="nav-user-icon online">
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
             <img src="images/profile.png" alt="">
         </div>
         <!-- settings-menu -->
         <div class="settings-menu">
-            <div class="user-profile">
-                <img src="images/profile.png" alt="">
-                <div>
-                    <p>John Doe</p>
-                    <a href="#">See your profile</a>
+            <div id="dark-btn" class="">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile.png" alt="">
+                    <div>
+                        <p>John Doe</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us improve the new design.</a>
+                    </div> 
+                </div>
+                <hr> 
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon" alt="">
+                    <a href="#">Settings & Privacy<img src="images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png"  class="settings-icon"alt="">
+                    <a href="#">Help & Support<img src="images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon" alt="">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon" alt="">
+                    <a href="#">Logout<img src="images/arrow.png" width="10px" alt=""></a>
                 </div>
             </div>
-            <div class="user-profile">
-                <img src="images/feedback.png" alt="">
-                <div>
-                    <p>John Doe</p>
-                    <a href="#">Help us improve the new design.</a>
-                </div> 
-
         </div>
        </nav>
 
@@ -348,6 +371,6 @@
         <p>Copyright 2023. All rights reserved. </p>
        </div>
         
-        <script src="" async defer></script>
+        <script src="index.js" async defer></script>
     </body>
 </html>
